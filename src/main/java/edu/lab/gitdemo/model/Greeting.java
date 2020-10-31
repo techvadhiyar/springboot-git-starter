@@ -1,4 +1,4 @@
-package edu.lab.gitdemo.resource;
+package edu.lab.gitdemo.model;
 
 public class Greeting {
 
