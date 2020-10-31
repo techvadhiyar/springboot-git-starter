@@ -17,6 +17,6 @@ deploy:
   bucket_path: springboot-git-starter-env
   on: 
     branch: main
-  access_key_id: $AWS_ACCESS_KEY_ID
+  access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_ACCESS_KEY_PASSWORD
   
