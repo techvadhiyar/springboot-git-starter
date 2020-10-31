@@ -7,3 +7,16 @@ before_install:
   
 script: ./mvnw clean install 
  
+ 
+deploy:
+  provider: elasticbeanstalk
+  region: us-east-2
+  app: springboot-git-starter-env
+  env: SpringbootGitStarterEnv-env
+  bucket_name: elasticbeanstalk-us-east-2-693831461729
+  bucket_path: springboot-git-starter-env
+  on: 
+    branch: main
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_ACCESS_KEY_PASSWORD
+  
