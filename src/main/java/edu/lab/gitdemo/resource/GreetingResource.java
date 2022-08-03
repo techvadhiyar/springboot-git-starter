@@ -1,3 +1,4 @@
+
 package edu.lab.gitdemo.resource;
 
 import java.util.concurrent.atomic.AtomicLong;
@@ -17,7 +18,7 @@ public class GreetingResource {
     @GetMapping("/api/greetings/greeting")
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
     	
-    		
+    	// just adding a line of documentation....
     	Greeting greetingObject = null;
 		// the counter value odd (i.e. 1, 3, 5, 7, ...)
         long newCounter = 0; //initialize
